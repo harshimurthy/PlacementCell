@@ -1,0 +1,274 @@
+body
+{
+background-image:url('backimage.png');
+background-position:center;
+}
+
+#HomeDiv ,#CompanyDiv ,   #ContactDiv
+{
+position:absolute;
+top:100px;
+left:300px;
+width:760px;
+height:700px;
+border:5px Solid #92E152;
+}
+#DeptDiv, #CoursesDiv, #CreditsDiv
+{
+ position:absolute;
+top:100px;
+left:300px;
+width:760px;
+height:600px;
+-webkit-border-radius: 171px 0px 171px 0px;
+ border: 4px solid #92E152;
+  padding-left:30px;
+  padding-top:20px;
+  padding-right:10px;
+	padding-bottom:30px;
+    background-color: transparent;
+  }
+
+.box2
+{
+position:absolute;
+background-color:transparent;
+top:120px;
+width:260px;
+height:700px;
+}
+
+.collegename
+{
+position:absolute;
+left:200px;
+height:81px;
+width:922px;
+}
+
+.college
+{ 
+text-align:center;
+font-size:45px;
+font-style:italic;
+color:#2BBDCB;
+margin-top:1px;
+margin-bottom:1px;
+}
+
+.address
+{
+
+text-align:center;
+font-size:15px;
+font-style:italic;
+color:#00ACC1;
+margin-top:1px;
+}
+
+
+ 
+ .textbox { 
+    -moz-border-radius-bottomright: 30px; 
+    -webkit-border-bottom-right-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    border: 1px solid #848484; 
+    position:absolute;
+    outline:0; 
+    top:400px
+    height:50px; 
+    width: 175px; 
+    padding-right:20px; 
+	color:green;
+  } 
+
+.buttons
+{display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+width: 230px;
+height: 45px;
+position: static;
+cursor: pointer;
+font-style:italic;
+opacity: 1;
+margin: 0 auto;
+padding: 0;
+overflow: visible;
+border: 2px solid #2BBDCB;
+-webkit-border-radius: 40px;
+border-radius: 40px;
+font-size:20px;
+color: #2BBDCB;
+text-align: center;
+letter-spacing: 1px;
+background: rgba(0,0,0,0);
+}
+
+.buttons:hover
+{
+display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: 230px;
+height: 45px;
+position: static;
+cursor: pointer;
+opacity: 1;
+margin: 0 auto;
+padding: 0;
+overflow: visible;
+border: 2px solid #00ACC1;
+-webkit-border-radius: 40px;
+border-radius: 40px;
+font-size:20px;
+font-style:italic;
+color: rgba(255,255,255,1);
+text-align: center;
+letter-spacing: 1px;
+background: #2BBDCB;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: none;
+
+}
+
+.message {
+	position:relative;
+	border-radius: 99px 0px 99px 0px;
+   	 -moz-border-radius: 99px 0px 99px 0px;
+    	-webkit-border-radius: 99px 0px 99px 0px;
+    	border: 2px solid #00ACC1;
+    	padding-left:30px;
+   	padding-top:20px;
+	padding-right:10px;
+	padding-bottom:30px;
+    	color:#00ACC1;
+    	font-size:18px;
+	font-weight:bold;
+	text-align:justify;
+	background-color: transparent;
+    	color:#BDBDBD;
+	font-style:italic;
+}
+
+h2
+{
+color:#BDBDBD;
+position:relative;
+top:-250px;
+left:20px;
+}
+
+.message2
+{
+color:#00ACC1;
+position:relative;
+top:-250px;
+left:20px;
+font-size:18px;
+}
+
+.loginbox
+{
+	width: 300px;
+	height: 180px;
+	position: relative;
+	background-color: transparent;
+	color: #2BBDCB;
+	padding: 25px;
+	left: 420px;
+	top:-250px;
+	
+}
+
+.loginbuttons
+{
+	color:white;
+	background-color:#2BBDCB;
+	border-radius:160px;
+	height:30px;
+	width:90px;
+	border: 2px solid #2BBDCB;
+}
+
+.loginbuttons:hover
+{
+	color:#2BBDCB;
+	background-color:white;
+	border-radius:160px;
+	height:30px;
+	width:90px;
+	border: 2px solid #2BBDCB;
+}
+
+a:hover
+{
+background-color:#00ACC1;
+color:white;
+}
+
+a,p
+{
+color:#00ACC1;
+}	
+
+.footertext
+{
+	text-align:center;
+	margin-top:1px;
+}
+
+.footer
+{ 	top:879px;
+	position:absolute;
+	left:500px;
+	width:306px;
+	height:20px;
+}
+
+.footButton
+{
+border:transparent; background-color:transparent; text-decoration:underline; color:#00ACC1;
+}
+
+.footButton:hover
+{background-color:#00ACC1;
+color:white;}
+
+#loginName
+{
+top:-210px;left:500px;width:180px; padding-left:10px;text-align:center;
+   	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;"}
+	
+	.contactmessage {
+	position:relative;
+	border-radius: 99px 0px 99px 0px;
+   	 -moz-border-radius: 99px 0px 99px 0px;
+    	-webkit-border-radius: 99px 0px 99px 0px;
+    	border: 2px solid grey;
+    	padding-left:30px;
+   	padding-top:20px;
+	padding-right:10px;
+	padding-bottom:30px;
+    	color:#00ACC1;
+    	font-size:18px;
+	font-weight:bold;
+	text-align:justify;
+	background-color: transparent;
+    	color:#BDBDBD;
+	font-style:italic;
+	width:420px;
+	left:160px;
+}
+#ContactDiv li{list-style-type:none;
+color:#00ACC1;
+font-size:20px;}
+

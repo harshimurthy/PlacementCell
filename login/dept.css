@@ -1,0 +1,44 @@
+
+#DeptName
+{
+color:white;
+text-align:center;
+}
+
+#OfficerName
+{
+text-align:center;
+color:#92E152;
+position:relative;
+top:6px;
+}
+.StaffTable{
+width:100%;
+padding-left:40px;
+}
+#DeptDiv li{list-style-type:none;
+color:#00ACC1;
+font-size:20px;}
+
+
+
+#OfficerMessage {
+	position:relative;
+	border-radius: 99px 0px 99px 0px;
+   	 -moz-border-radius: 99px 0px 99px 0px;
+    	-webkit-border-radius: 99px 0px 99px 0px;
+    	border: 2px solid grey;
+    	padding-left:30px;
+   	padding-top:20px;
+	padding-right:10px;
+	padding-bottom:30px;
+    	color:#00ACC1;
+    	font-size:18px;
+	font-weight:bold;
+	text-align:justify;
+	background-color: transparent;
+    	color:#BDBDBD;
+	font-style:italic;
+	width:420px;
+	left:60px;
+}

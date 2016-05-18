@@ -1,0 +1,109 @@
+#CoursesDiv
+{
+ position:absolute;
+top:100px;
+left:300px;
+width:760px;
+height:600px;
+-webkit-border-radius: 171px 0px 171px 0px;
+ border: 4px solid #92E152;
+  padding-left:30px;
+  padding-top:20px;
+  padding-right:10px;
+	padding-bottom:30px;
+    background-color: transparent;
+  }
+#CourseName
+{
+color:white;
+text-align:center;
+
+}
+ #DeptName
+{
+color:white;
+text-align:center;
+}
+.courseList li
+{
+list-style-type:none;
+padding-bottom:2px;
+color:#00ACC1;
+}
+.courseList{
+color:#92E152;
+font-weight:bold;
+font-size:20px;
+padding-left:3px;
+}
+.PlaceButton
+{
+
+border:transparent; background-color:transparent; text-decoration:underline; color:#00ACC1;
+font-size:20px;
+padding-right:9px;
+}
+#DeptMenu{background-color:#A9F5D0;}
+#PlacementLine1
+{
+height:12px;
+box-shadow:inset 0 12px 12px -12px #A9F5D0;
+border:0;
+}
+#PlacementLine2
+{
+height:12px;
+box-shadow:inset 0 12px 12px -12px #A9F5D0;
+border:0;
+}
+
+.StaffTable{
+width:100%;
+padding-left:40px;
+}
+#OfficerDiv, #FacultyDiv, #ExecutiveDiv
+{
+top:0px;
+left:50px;
+position:relative;
+width:560px;
+height:360px;
+background-color:transparent;
+}
+#OfficerName
+{
+text-align:center;
+color:#92E152;
+position:relative;
+top:6px;
+}
+.Officer
+{ 
+text-align:left;
+list-style-type:none;
+font-size:20px;
+}
+#comptab1
+{
+position:relative;
+left:42px;
+}
+
+.FacultyTable tr
+{
+		font-size:15px;
+		color:black;
+		font-weight:bold;
+}
+.FacultyTable tr:nth-child(odd)
+{
+	background:#8AE4F0;
+}
+.FacultyTable tr:nth-child(even)
+{
+	background:#A9F5D0;
+}
+.FacultyTable{width:100%;}
+
+
+

@@ -1,0 +1,90 @@
+.icon
+{
+	position:relative;
+	top:12px;
+	left:0px;
+	height:95px;
+	width:81px;
+}
+.collegename
+{
+position:relative;
+left:115px;
+height:81px;
+width:922px;
+
+}
+
+.college
+{ 
+text-align:center;
+font-size:45px;
+font-style:italic;
+color:#666666;
+margin-top:1px;
+margin-bottom:1px;
+position:relative;
+top:-90px;
+left:73px;
+}
+
+.address
+{
+
+text-align:center;
+font-size:15px;
+font-style:italic;
+color:#666666;
+margin-top:1px;
+position:relative;
+left:61px;
+top:-86px;
+}
+.collegeicon
+{
+	position:relative;
+	top:-171px;
+	left:991px;
+	height:95px;
+	width:81px;
+}
+.pinkbox
+{
+position:relative;
+top:38px;
+width:100%;
+height:75px;
+color:white;
+background-color:#FF0054;
+text-align:center;
+font-size:50px;
+}
+
+.creditbox
+{
+position:relative;
+top:30px;
+width:100%;
+font-family:serif;
+color:#FF0054;
+background-color:#666666;
+font-size:25px;
+height:600px;
+
+}
+
+.teamicon
+{
+position:relative;
+left:623px;
+top:-439px;
+}
+
+.collegepic
+{
+position:relative;
+top:-18px;
+left:100px;
+width:879px;
+
+}

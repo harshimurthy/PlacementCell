@@ -1,0 +1,326 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="loginstyle.css"/>
+<link rel="stylesheet" type="text/css" href="course.css"/>
+<link rel="stylesheet" type="text/css" href="dept.css"/>
+<link rel="stylesheet" type="text/css" href="company.css"/>
+<script type="text/javascript" src="buttons.js"></script></head>
+<link rel="stylesheet" type="text/css" href="cour1.css"/>
+<script type="text/javascript" src="coursejs.js"></script>
+
+<body>
+
+<div class="collegename">
+	<p class="college">Dr. Ambedkar Institute of Technology, Bangalore</p>
+
+
+	<p class="address">
+ 		(An Autonomous Institution affiliated to VTU, Belgaum, Aided by Govt. of Karnataka)
+	<p>
+</div>
+
+
+<div class="box2">
+<p>
+	   
+        
+	<input type="submit" value="Home" onclick="ShowDivHome()" class="buttons"/>		
+ 
+     
+	<br/><br/><br/>
+
+	<form action="http://www.dr-ait.org      ">                 
+	<input type="submit" class="buttons" value="Dr. AIT" >	 
+        </form>
+	<br/><br/><br/>
+
+	
+	<input type="submit" value="Placement Department" onclick="ShowDivDept()" class="buttons"/>
+	<br/><br/><br/>
+	
+
+   
+	<input type="submit" value="Courses" onclick="ShowDivCourses()" class="buttons"/>
+	<br/><br/><br/>
+      
+
+
+		<input type="submit" value="Companies" onclick="ShowDivCompany()" class="buttons"/>
+	<br/><br/><br/>
+
+
+        
+		<input type="submit" value="Contact" onclick="ShowDivContact()" class="buttons"/>
+       
+
+	</p>
+</div>
+
+<div id="HomeDiv" style="display:block;" class="answer_list">
+	<img  src="1.jpg" alt="Image cannot be displayed" width="100%" top="10px" position:"relative"/>
+
+	<p class="message" style="top:10px;left:10px;width:350px;height: 150px;">
+	
+		&nbsp&nbsp&nbsp&nbspWelcome to the Training and Placement Website of Dr. AIT. The placements commence in the beginning of final year, i.e., August of every year. The main objective is to ensure that students are placed in the companies according to their strengths and pursue career in their area of interest or expertise.
+	</p>
+
+	<p class="message" id="loginname">
+		Student/Staff Login
+	</p>
+
+
+
+		<div class="loginbox">
+			<form align="center" method="POST" action="login1.php">
+			<p >User ID  &nbsp&nbsp&nbsp&nbsp <input type="text" name="username"></p>
+			<p >Password  &nbsp <input type="password" name="password"></p>
+			<p >&nbsp&nbsp&nbsp
+			<a href="http://www.google.com"> I forgot my password</a>
+			</p>
+			<p > &nbsp&nbsp
+		<input type="submit" value=" LOGIN " class="loginbuttons">&nbsp
+	        <input type="submit" value="CANCEL" class="loginbuttons">
+	</p>
+	</form>
+	</div>
+	
+
+
+<h2 >From the desk of secretary:</h2>
+<div class="message2" >
+ "Our institute strives to maintain highest standards in delivering the finest genre of young engineers to the nation. Let us work for a better tomorrow and a better nation."
+</div >
+</div>
+
+<!-- 
+
+-----------------
+---------------------------------This is the div for the Training and Placement Department
+-----------------------------
+---------------->
+
+<div id="DeptDiv"  class="answer_list" style="display:none;">
+	<h1 id="DeptName"> Training and Placement Department</h1>
+	<div id=""><br/>
+		<hr id="PlacementLine1"/>
+
+		<input type="submit" value="Placement Officer " onclick="ShowDivOfficer()" class="PlaceButton"/>
+		<input type="submit" value="Department Coordinators" onclick="ShowDivFaculty()" class="PlaceButton"/>
+		<input type="submit" value="Executive Staff" onclick="ShowDivExecutive()" class="PlaceButton"/>
+		<a href="file:///E:\PlacementCell\Docs\ProfileofTraining.pdf" class="PlaceButton" > Student Coordinators</a>
+		
+		<hr id="PlacementLine2"/>
+	</div>
+	
+	<div id="OfficerDiv"  >
+		<h2 id="OfficerName">Placement Officer </h2><br/>
+		<div id="OfficerMessage">
+		<ul >
+		<li>Sharada H S</li>
+		<li>Training and Placement Officer</li>
+		<li>Telephone Number</li>
+		<li>Mobile Number</li>
+		<li>Email Id</li>
+		<li><a href="file:///E:\PlacementCell\Docs\ProfileofTraining.pdf"  > Placement Officer Profile</a></li></ul>
+		</div>
+	</div>
+	
+	<div id="FacultyDiv" Style="display:none;">
+					<h2 id="OfficerName"> Department Placement Coordinators</h2>
+				<div id="comptab1">
+				
+					<table class="FacultyTable" >
+						<tr><th>Sl No.</th><th>Faculty Name</th><th>Branch</th><th>Contact</th></tr>
+						<tr><td> 1</td><td> </td><td> </td><td> </td></tr>
+						<tr><td>2 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td> 3</td><td>Prof. Shashikanth </td><td>MECH </td><td> </td></tr>
+						<tr><td>4 </td><td>Prof. Satish B. Basapur </td><td>ISE </td><td> </td></tr>
+						<tr><td> 5</td><td> </td><td> </td><td> </td></tr>
+						<tr><td>6 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>7 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>8 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>9 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>10 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>11 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>12 </td><td> </td><td> </td><td> </td></tr>
+						<tr><td>13 </td><td> </td><td> </td><td> </td></tr></table>
+				</div>
+	</div>
+	
+	<div id="ExecutiveDiv" Style="display:none;"><h2 id="OfficerName">Executive Staff</h2>
+			<table class="StaffTable"><tr><td >
+		<ul>
+		<li>Name</li>
+		<li>Designation</li>
+		<li>Telephone Number</li>
+		<li>Mobile Number</li>
+		<li>Email Id</li></ul></td>
+		<td >
+		<ul>
+		<li>Name</li>
+		<li>Designation</li>
+		<li>Telephone Number</li>
+		<li>Mobile Number</li>
+		<li>Email Id</li></ul></td></tr></table>
+	</div>
+</div>
+
+<!-- 
+
+-----------------
+---------------------------------This is the div for the Courses 
+-----------------------------
+---------------->
+
+<div id="CoursesDiv" style="display:none;" class="answer_list"> 
+
+<h1 id="CourseName"> Courses</h1>
+
+	<table class="courseTable">
+	<tr><td>
+	<ul class="courseList" > <h3 >Undergraduate Departments</h3>
+	<li>Civil Engineering</li>
+	<li>Computer Science and Engineering</li>
+	<li>Electrical and Electronics Engineering</li>
+	<li>Electronics and Communication Engineering</li>
+	<li>Instrumentation Technology</li>
+	<li>Information Science and Engineering</li>
+	<li>Industrial Engineering and Management</li>
+	<li>Mechanical Engineering</li>
+	<li>Medical Electronics</li>
+	<li>Telecommunication Engineering</li>
+	</ul>
+	<br/><br/>
+	<ul class="courseList"> <h3>Engineering Sciences</h3>
+	<li>Mathematics</li>
+	<li>Chemistry</li>
+	<li>Physics</li>
+	<li>Humanities and Social Sciences</li>
+	</ul></td>
+	<td>
+	<ul class="courseList"> <h3>PostGraduate Departments</h3>
+
+	<h4>M.C.A</h4>
+	<h4>M.B.A</h4>
+
+	<h4 >M.tech</h4>
+	<li>Computer Science & Engineering</li>
+	<li>VLSI Design & Embedded Systems</li>
+	<li>Power Electronics</li>
+	<li>Digital Communication & Networking</li>
+	<li>Structural Engineering</li>
+	<li>Machine Design</li>
+	<li>Computer Network Engineering</li>
+	<li>Telecommunication Engineering</li>
+	</ul></td></tr></table>
+</div>
+
+<!-- 
+
+-----------------
+---------------------------------This is the div for the Company List
+-----------------------------
+---------------->
+
+
+<div id="CompanyDiv" style="display:none;" class="answer_list">
+	<h1 id="CompanyName"> Companies</h1>
+	<div id="comptab1">
+	
+		<table class="companytable" >
+			<tr><th>Sl No.</th><th>Company Name</th></tr>
+			<tr><td> 1</td><td>Accenture </td></tr>
+			<tr><td>2 </td><td>ACT TV</td></tr>
+			<tr><td> 3</td><td>ADISYS Software pvt.Ltd </td></tr>
+			<tr><td>4 </td><td>AIG Analytics</td></tr>
+			<tr><td> 5</td><td>alcatel Lucent </td></tr>
+			<tr><td>6 </td><td>Aryaka Technologies </td></tr>
+			<tr><td>7 </td><td>Baehal </td></tr>
+			<tr><td>8 </td><td>Caritor </td></tr>
+			<tr><td>9 </td><td>CEGEDIM </td></tr>
+			<tr><td>10 </td><td>CMC Ltd </td></tr>
+			<tr><td>11 </td><td>Cognizant </td></tr>
+			<tr><td>12 </td><td>Cummins India </td></tr>
+			<tr><td>13 </td><td>Exeter </td></tr>
+			<tr><td>14 </td><td>HCL Technologies </td></tr>
+			<tr><td>15 </td><td>Health Asyst </td></tr>
+			<tr><td>16 </td><td>Honeywell </td></tr>
+			<tr><td>17 </td><td>HP </td></tr>
+			<tr><td>18 </td><td>IBM </td></tr>
+			<tr><td>19 </td><td>I-flex </td></tr>
+			<tr><td>20 </td><td>Infosys </td></tr>
+			<tr><td>21 </td><td>Johnson Controls </td></tr>
+			<tr><td>22 </td><td>JVS Electronics </td></tr>
+			<tr><td>23 </td><td>L&T Infotech Ltd </td></tr>
+			<tr><td>24 </td><td>Leap Loyalty </td></tr>
+			<tr><td>25 </td><td>MEIL </td></tr>
+			<tr><td>26 </td><td>Microsoft </td></tr>
+			<tr><td>27 </td><td>Mindtree Ltd </td></tr></table></div>
+			
+	<div id="comptab2">
+		
+		<table class="companyTable">
+			<tr><th>Sl No.</th><th>Company Name</th></tr>
+			<tr><td>28 </td><td>Myphasis </td></tr>
+			<tr><td>29 </td><td>Mysigma </td></tr>
+			<tr><td>30 </td><td>Nagarjuna Constructions </td></tr>
+			<tr><td>31 </td><td>PRDC </td></tr>
+			<tr><td>32 </td><td>Razor Think </td></tr>
+			<tr><td>33 </td><td>Quest </td></tr>
+			<tr><td>34 </td><td>Quinnx Consultancy </td></tr>
+			</table>
+	</div>
+			
+</div>
+
+<!-- 
+
+-----------------
+---------------------------------This is the div for the Contact Information
+-----------------------------
+---------------->
+<div id="ContactDiv" style="display:none;" class="answer_list"><br/>
+	<img  src="1.jpg" alt="Image cannot be displayed" style="width:100%;top:-18px;position:relative"/>
+		<h2 id="OfficerName">Placement Officer </h2><br/>
+		<div class="ContactMessage">
+		<ul class="Officer">
+		<li>Dr. Ambedkar Institute of Technology</li>
+		<li>Address: Near Jnana Bharathi Campus,</li>
+		<li> Mallath halli, Bengaluru,</li>
+		<li>Karnataka 560056</li><br/>
+		<li>Sharada H S</li>
+		<li>Training and Placement Officer</li>
+		<li>Telephone Number</li>
+		<li>Mobile Number</li>
+		<li>Email Id</li></ul>
+		</div>
+</div>
+	
+<!-- 
+
+-----------------
+---------------------------------This is the div for the Credits
+-----------------------------
+---------------->
+<div id="CreditsDiv" style="display:none;" class="answer_list"><br/><br/>
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="footer">
+<p class="footertext">
+<input type="submit" value="Home" onclick="ShowDivHome()" class="footButton"/>|
+<a href="http://www.dr-ait.org" >www.dr-ait.org</a> |
+<input type="submit" value="Contact" onclick="ShowDivContact()" class="footButton"/>|
+<input type="submit" value="Credits" onclick="ShowDivCredits()" class="footButton"/>
+</p>
+</div>
+</body>
+<html>

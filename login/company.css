@@ -1,0 +1,48 @@
+
+#CompanyName
+{
+color:white;
+text-align:center;
+top:0px;
+position:relative;
+}
+.Companytable{ width:330px;}
+
+#comptab1
+{
+position:relative;
+
+left:42px;
+}
+#comptab2
+{
+position:absolute;
+left:420px;
+top:78px;
+
+}
+.companyTable tr
+{
+		font-size:15px;
+		color:black;
+		font-weight:bold;
+		
+}
+.companytable tr:nth-child(odd)
+{
+	background:#8AE4F0;
+}
+.companytable tr:nth-child(even)
+{
+	background:#A9F5D0;
+}
+.companytable td:nth-child(odd)
+{
+	width:15%;
+	text-align:center;
+}
+.companytable td:nth-child(even)
+{
+	width:85%;
+}
+
