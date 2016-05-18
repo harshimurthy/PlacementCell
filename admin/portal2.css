@@ -1,0 +1,123 @@
+
+
+.purplediv
+{
+	position:relative;
+	background-color:#603CBA;
+	width:50px ;
+	height:50px;
+	border-radius:50%;
+	color:white;
+	text-align:center;
+
+}
+
+.purpledata
+{
+position:absolute;
+	color:#603CBA;
+	font-size:31px;
+
+}
+.reddata
+{
+position:absolute;
+top:-2px;
+	left:340px;
+	color:#B91D47;
+	font-size:31px;
+}
+.reddiv
+{
+	position:relative;
+	background-color:#B91D47;
+	width:50px ;
+	height:50px;
+	color:white;
+	text-align:center;
+	border-radius:50%;
+}
+.pinkdiv
+{
+	position:relative;
+	background-color:#9F00A7;
+	width:50px ;
+	height:50px;
+	border-radius:50%;
+	color:white;
+	text-align:center;
+}
+.pinkdata
+{
+position:absolute;
+	top:290px;
+	left:470px;
+	color:#9F00A7;
+	font-size:31px;
+}
+.orangediv
+{
+	position:relative;
+	background-color:#DA532C;
+	width:50px ;
+	height:50px;
+	border-radius:50%;
+	color:white;
+	text-align:center;
+}
+.orangedata
+{
+position:absolute;
+	top:290px;
+	left:188px;
+	color:#DA532C;
+	font-size:31px;
+}
+
+
+
+a
+{
+text-decoration:none;
+
+}
+
+.portalbox
+{
+background-color:transparent;
+position:relative;
+width:801px;
+height:609px;
+top:150px;
+left:150px;
+background-image:url(collbg.jpg)
+}
+
+.adminaccount
+{
+
+
+	position:relative;
+	background-color:transparent;
+	width:50px ;
+	height:50px;
+	top:250px;
+	left:945px;
+	border-radius:50%;
+	color:white;
+	text-align:center;
+
+}
+
+.box
+{
+width:200px;
+position:relative;
+background-color:#00A300;
+height:100px;
+color:white;
+font-size:15px;
+top:20px;
+}
+
+

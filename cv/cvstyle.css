@@ -1,0 +1,125 @@
+.middlebox
+{
+	position:absolute;
+	border:1px solid green;
+	background-color:#8AE4F0;
+	top:340px;
+	left:130px;
+	width:1033px;
+	
+}
+
+
+
+.cvtable{ width:100%;}
+
+.cvtable table,tr,td{
+width:40%;
+	font-weight:bolder;
+border:1px solid black;
+color:#003366;
+	
+	}
+.innertab table,tr,td{width:60%;}
+
+input
+{
+	size:40px;
+	
+}
+
+.cvtable tr:nth-child(odd)
+{
+	background:#A9F5D0;
+}
+.cvtable tr:nth-child(even)
+{
+	background:#8AE4F0;
+}
+
+
+td{font-color:#69F0AE;}
+font{
+ color:#69F0AE;}
+  
+ .middlebox1
+{
+	position:absolute;
+	
+	background-color:white;
+	top:340px;
+	left:130px;
+	width:1033px;
+	
+}
+.cvtable1 table,tr,td,th{
+	font-weight:bolder;
+color:#003366;	
+border:solid 3px white;
+line-height:25px;
+font-size:20px;
+	}
+.cvtable1 tr td:nth-child(odd){
+
+width:10%;
+position:center;
+}
+.cvatble tr{
+font-weight:lighter;}
+.cvtable1 table
+{
+width:100%;
+}
+.cvtable1 tr:nth-child(odd)
+{
+	background:#dcd9f3;
+}
+.cvtable1 tr:nth-child(even)
+{
+	background:#d0f0d5;
+}
+.cvtable1 th
+{
+color:#009688;
+font-size:20px;
+font-weight:bold;
+}
+.degreeclass
+{
+width:100%;
+}
+
+.Dclass
+{
+background:white;
+}
+.Dclass th
+{
+color:#7f7fff;
+font-size:20px;
+font-weight:bold;
+}
+.Dclass td{
+color:#1E90FF;
+font-size:20px;
+font-weight:light;
+}
+.Dclass tr:nth-child(odd)
+{
+	background:#E0F7FA;
+}
+.Dclass tr:nth-child(even)
+{
+	background:#e0eafa;
+}
+.headingdesign
+{
+background-color:white;
+line-height:50px;
+position:center;
+border:none;
+text-align:center;
+font-size:25px;
+color:#4b37df;
+
+}

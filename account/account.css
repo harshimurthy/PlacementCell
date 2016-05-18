@@ -1,0 +1,37 @@
+
+.accountdiv
+{
+ height:400px;
+ width:712px;
+ top:238px;
+ left:255px;
+ position:relative;
+ background-image:url('../common/bg.jpg');
+ color:white;
+ text-align:center;
+}
+.accountdiv h1
+{
+text-align:center;
+color:#99FF99;
+padding-top:10px;
+}
+
+.accountdiv hr
+{
+height:6px;
+color:#1E90FF;
+background-color:#1E90FF;
+border-bottom-color:transparent;
+border-top-color:transparent;
+}
+.accounttab
+{
+color:white;
+position:relative;
+left:190px;
+}
+.errorp
+{
+color:#99FF99;
+}

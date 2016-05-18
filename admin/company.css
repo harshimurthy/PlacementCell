@@ -1,0 +1,45 @@
+.companydiv
+{
+position:absolute;
+top:202px;
+left:273px;
+height:366px;
+width:644px;
+background-color:#DA532C;
+color:white;
+
+}
+
+.COMPANYDIV TABLE
+{
+
+color:white;}
+.tabdiv
+{
+position:absolute;
+top:603px;
+left:273px;
+width:644px;
+}
+
+.viewTable tr
+{
+		
+		color:#DA532C;
+		font-weight:bold;
+	line-height:30px;
+}
+.viewtable tr:nth-child(odd)
+{
+	background:#fae4ea;
+}
+.viewtable tr:nth-child(even)
+{
+	background:#fae9e4;
+}
+
+.viewTable
+{
+	width:100%;
+	text-align:center;
+}

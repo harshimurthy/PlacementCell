@@ -1,0 +1,91 @@
+.updatediv
+{
+position:relative;
+top:290px;
+left:164px;
+background-color:#e8ffd2;
+color:#2BBDCB;
+width:854px;
+height:1549px;
+
+}
+.updatediv input[type="submit"],input[type="button"]{
+
+border:solid #2BBDCB 2px;
+background:#2BBDCB;
+color:white;
+border-radius:50px;
+position:center;
+width:100px;
+height:50px;
+font-size:20px;
+} 
+.img1
+{
+
+position:absolute;
+top:230px;
+left:100px;
+color:#DA532C;
+}
+
+.img2
+{
+
+position:absolute;
+top:230px;
+left:700px;
+color:#DA532C;
+}
+.tabdiv1
+{
+position:absolute;
+top:250px;
+left:273px;
+width:644px;
+color:#2BBDCB;
+background-color:#2BBDCB;
+}
+
+.viewtable1 tr
+{
+		font-weight:bold;
+		line-height:30px;
+	
+}
+.viewtable1 tr:nth-child(odd)
+{
+	background:#e9f7ee;
+}
+.viewtable1 tr:nth-child(even)
+{
+	background:#f7e9f2;
+}
+
+.viewtable1
+{
+	width:100%;
+	text-align:center;	
+}
+
+
+.name
+{
+color:#2BBDCB;
+font-size:40px;
+text-align:center;
+position:relative;
+top:242px;
+left:362px;
+}
+
+.registerbox
+{
+position:relative;
+top:500px;
+left:500px;
+background-color:#f7e9f2;
+width:1000px;
+
+
+}

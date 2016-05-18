@@ -1,0 +1,45 @@
+.deptdiv
+{
+position:absolute;
+top:202px;
+left:273px;
+height:366px;
+width:644px;
+background-color:#9F00A7;
+color:white;
+
+
+
+}
+.tabdiv
+{
+position:absolute;
+top:603px;
+left:273px;
+width:644px;
+
+
+}
+
+.viewTable tr
+{
+		
+		color:#9F00A7;
+		font-weight:bold;
+		line-height:30px;
+	
+}
+.viewtable tr:nth-child(odd)
+{
+	background:#E1BEE7;
+}
+.viewtable tr:nth-child(even)
+{
+	background:#D1C4E9;
+}
+
+.viewTable
+{
+	width:100%;
+	text-align:center;
+}

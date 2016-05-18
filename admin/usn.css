@@ -1,0 +1,103 @@
+
+
+.AutoDiv
+{
+top:145px;
+left:50px;
+width:500px;
+height:200px;
+position:absolute;
+background-color:#603CBA;
+color:white;
+}
+
+
+.ManualDiv
+{
+top:145px;
+left:690px;
+width:500px;
+height:200px;
+position:absolute;
+background-color:#B91D47;
+color:white;
+}  
+
+.MsgDiv
+{
+top:358px;
+left:50px;
+width:500px;
+height:500px;
+position:absolute;
+background-color:#9F00A7;
+color:white;
+
+}
+.EntriesDiv
+{
+top:358px;
+left:690px;
+width:500px;
+height:500px;
+position:absolute;
+background-color:#DA532C;
+color:white;
+}
+
+.StudentDelDiv
+{
+top:190px;
+left:273px;
+width:639px;
+height:386px;
+position:absolute;
+background-color:#603CBA;
+color:white;
+}
+
+.studentDelDiv h2
+{
+text-align:center;
+}
+.studentdeldiv table
+{
+color:white;
+}
+.delbox
+{
+position:relative;
+left:100px;
+color:white;
+
+}
+.tabdiv
+{
+position:absolute;
+top:603px;
+left:273px;
+width:644px;
+
+
+}
+.viewTable tr
+{
+		
+		color:#603CBA;
+		font-weight:bold;
+	line-height:30px;
+}
+.viewtable tr:nth-child(odd)
+{
+	background:#D7CEED;
+}
+.viewtable tr:nth-child(even)
+{
+	background:#E5CBEC;
+}
+
+.viewTable
+{
+	width:100%;
+	text-align:center;
+}

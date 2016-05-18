@@ -1,0 +1,81 @@
+.downbox
+{
+position:absolute;
+background-color:white;
+top:279px;
+left:60px;
+color:#00ACC1;
+width:569px;
+}
+.uploaddiv
+{
+position:absolute;
+background-color:#ffd2e8;
+top:279px;
+left:709px;
+
+width:509px;
+height:171px;
+color:#ff3a83;
+
+}
+
+.uploaddiv input[type="submit"]{
+
+border:solid #ff3a83 2px;
+background:#ff3a83;
+color:white;
+border-radius:50px;
+position:center;
+} 
+
+
+.deletediv
+{
+position:absolute;
+background-color:#dbffb9;
+top:496px;
+left:709px;
+color:#234545;
+width:509px;
+height:171px;
+
+
+}
+
+.deletediv input[type="submit"]{
+
+border:solid #234545 2px;
+background:#234545;
+color:white;
+border-radius:50px;
+}
+
+.downtable TABLE
+{
+
+color:white;
+width:100%;
+}
+
+
+.viewtable tr
+{
+		
+
+	line-height:30px;
+}
+.viewtable tr:nth-child(odd)
+{
+	background:#ffd2e8;
+}
+.viewtable tr:nth-child(even)
+{
+	background:#e8ffd2;
+}
+
+.viewtable
+{
+	width:100%;
+	text-align:center;
+}
