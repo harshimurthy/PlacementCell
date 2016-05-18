@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head><title>Dr.AIT Placement Cell</title>
+<link rel="stylesheet" type="text/css" href="commonstyle1.css" />
+<link rel="stylesheet" type="text/css" href="menustyle1.css" />
+<link rel="stylesheet" type="text/css" href="homestyle1.css" />
+<link rel="stylesheet" type="text/css" href="portal.css" />
+<link rel="stylesheet" type="text/css" href="dept.css" />
+<script type="text/javascript" src="showtime1.js"></script>
+<script type="text/javascript" src="password.js"></script>
+<link rel="stylesheet" type="text/css" href="account.css" />
+
+</head>
+
+<body>
+	<div class="common">
+	<img src="pic.jpg" alt="Cannot display image" class="icon"/>
+		<p class="collegename">
+			Dr. Ambedkar Institute of Technology, Bangalore
+		</p>
+
+		<p class="department">
+			Department of Training and Placement
+		</p>
+
+		<img src="icon.jpg" alt="Cannot display image" class="collegeicon"/>
+	</div>
+
+		
+	<div class="hello">
+	<a href="deptcoord.html" class="logout">Home</a> 
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<script> timefn()</script>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="../login/logout.php" class="logout">logout</a>
+	</div>
+	
+	<div class="deptdiv">
+	<form action="details.php" method="POST" >
+	<h2 align="center">Student Details</h2>
+	<label> Enter USN</label>
+	<input type="text" name="usn"/><br/>
+	<input type="submit" name="usnsubmit" value="Search Student"/>
+	</form>
+	
+	<?php
+	require ('../core1.inc.php'); 
+	require ('../connect1.inc.php');
+	$id=$_SESSION['user_id'];
+	$branch_query=mysql_query("select branch from origpwd where id='$id'");
+	$branch1=mysql_result($branch_query,0,'branch');
+	$branch=substr($branch1,0,count($branch1)-6);
+	if(isset($_POST['usn']) && isset($_POST['usnsubmit']))
+	{
+		$usn=$_POST['usn'];
+		$q="select * from origpwd where username='$usn'";
+		if($qrun=mysql_query($q))
+		{
+			$phone=mysql_result($qrun,0,'phone');
+			$email=mysql_result($qrun,0,'email');
+			
+			$run=mysql_query("select `Full Name` from cv where USN='$usn' ");
+			$name=mysql_result($run,0,'Full Name');
+			echo "<br> Name:".$name."<br/>USN: ".$usn."<br/>Phone No : ";
+			echo $phone."<br/> Email ID: ".$email;
+				
+		}
+	
+	}
+	?>
+	</div>
+	
+
+
+<div class="tabdiv">
+<table class="viewtable"><tr> <td colspan=4>ALL BRANCH STUDENT ENTRIES</td></tr>
+<tr><th>USERNAME</th><th>BRANCH</th><th>PHONE NUMBER</th><th>EMAIL ID</th></tr>
+
+<?php
+
+$q="select * from `origpwd` where `branch`='$branch' order by `username` ASC";
+if($res_run=mysql_query($q))
+{
+	for($i=0;$i<mysql_num_rows($res_run);$i++)
+	{
+			$username=mysql_result($res_run,$i,'username');
+			$phone=mysql_result($res_run,$i,'phone');
+			$email=mysql_result($res_run,$i,'email');
+			$branch=mysql_result($res_run,0,'branch');
+			
+			echo "<tr><td> ".$username."</td><td> ".$branch;
+			echo "</td><td>  ".$phone."</td><td>  ".$email,"</td></tr>";
+		
+		
+		
+	}
+	echo "</table>";
+}
+
+
+?>
+	</div>

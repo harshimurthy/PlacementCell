@@ -1,0 +1,83 @@
+body
+{
+	background-image:url('deptbg1.jpg');
+	background-size:auto;
+
+	
+}
+
+.common
+{
+	left:130px;
+	position:absolute;
+	height:104px;
+	width:1022px;
+}
+
+.department
+{
+	color:#A1887F;
+	position:relative;
+	font-size:25px;
+	text-align:center;
+	font-style:italic;
+	font-weight:bold;
+	margin-top:0px;
+	left:0px;
+	top:-88px;
+}
+
+.collegename
+{
+	color:#FF8A65;
+	font-size:40px;
+	margin-top:0px;
+	margin-bottom:1px;
+	left:99px;
+	top:-92px;
+	position:relative;
+}
+.icon
+{
+	position:relative;
+	top:12px;
+	left:0px;
+	height:95px;
+	width:81px;
+}
+.collegeicon
+{
+	position:relative;
+	top:-175px;
+	left:961px;
+	height:95px;
+	width:81px;
+}
+
+.hello
+{
+	position:absolute;
+	top:112px;
+	left:273px;
+	height:18px;
+	width:640px;
+	border-top-color:#B91D47;
+	border-bottom-color:#B91D47;
+	border-style:dotted;
+	border-width:1px;
+	color:#FF8A65;
+	font-weight:bold;
+}
+
+
+.logout
+{
+color:#A1887F;
+text-transform:uppercase;
+position:relative;
+
+
+}
+
+
+

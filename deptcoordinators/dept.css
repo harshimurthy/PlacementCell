@@ -1,0 +1,102 @@
+.deptdiv
+{
+position:absolute;
+top:202px;
+left:273px;
+height:366px;
+width:644px;
+background-color:#9F00A7;
+color:white;
+
+
+
+}
+.tabdiv
+{
+position:absolute;
+top:603px;
+left:273px;
+width:644px;
+
+
+}
+
+.viewtable tr
+{
+		
+		color:#9F00A7;
+		font-weight:bold;
+		line-height:30px;
+	
+}
+.viewtable tr:nth-child(odd)
+{
+	background:#E1BEE7;
+}
+.viewtable tr:nth-child(even)
+{
+	background:#D1C4E9;
+}
+
+.viewtable
+{
+	width:100%;
+	text-align:center;
+}
+.ResultDiv
+{
+ position:relative;
+ top:220px;
+ left:136px;
+ width:773px;
+ 
+}
+ .msg
+ {
+ position:relative;
+ left:201px;
+ top:220px;
+ color:#1E90FF;
+ 
+ background-color:transparent;
+ 
+ }
+.ResultTable
+{
+ position:relative;
+ width:100%;
+}
+
+.ResultTable table,tr,td,th{
+
+border:1px solid black;
+color:#003366;
+width:auto;
+text-transform:uppercase;
+}
+.ResultTable tr:nth-child(odd)
+{
+	background:#BCA9F5;
+}
+.ResultTable tr:nth-child(even)
+{
+	background:#F5A9BC;
+}
+
+.img1
+{
+
+position:absolute;
+top:230px;
+left:100px;
+color:#DA532C;
+}
+
+.img2
+{
+
+position:absolute;
+top:230px;
+left:700px;
+color:#DA532C;
+}

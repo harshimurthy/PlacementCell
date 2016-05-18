@@ -1,0 +1,95 @@
+.SearchDiv
+{
+ height:400px;
+ width:570px;
+ top:186px;
+ left:255px;
+ position:relative;
+ background-image:url('../common/bg.jpg');
+ color:white;
+
+}
+.SearchDiv h2
+{
+text-align:center;
+color:#1E90FF;
+padding-top:10px;
+
+}
+
+.Searchdiv hr
+{
+height:6px;
+color:#99FF99;
+background-color:#99FF99;
+border-bottom-color:transparent;
+border-top-color:transparent;
+}
+.Smallhr
+{
+height:1px;
+color:#99FF99;
+background-color:#99FF99;
+border-bottom-color:transparent;
+border-top-color:transparent;
+}
+.SearchDiv  ul li
+{
+list-style-type:none;
+
+}
+
+.BranchBox
+{
+position:relative;
+left:152px;
+top:-40px;
+width:100px;
+height:100px;
+
+}
+.SearchButton
+{
+text-align:center;
+position:absolute;
+left:190px;
+
+}
+.ResultDiv
+{
+ position:relative;
+ top:220px;
+ left:136px;
+ width:773px;
+ 
+}
+ .msg
+ {
+ position:relative;
+ left:201px;
+ top:32px;
+ color:#1E90FF;
+ background-color:transparent;
+ 
+ }
+.ResultTable
+{
+ position:relative;
+ width:100%;
+}
+
+.ResultTable table,tr,td,th{
+
+border:1px solid black;
+color:#003366;
+width:auto;
+text-transform:uppercase;
+}
+.ResultTable tr:nth-child(odd)
+{
+	background:#BCA9F5;
+}
+.ResultTable tr:nth-child(even)
+{
+	background:#F5A9BC;
+}

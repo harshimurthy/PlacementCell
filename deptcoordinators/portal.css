@@ -1,0 +1,75 @@
+.greendiv
+{
+	position:absolute;
+	background-color:#00A300;
+	width:183px ;
+	height:183px;
+	top:467px;
+	left:114px;
+	color:white;
+	text-align:center;
+
+	
+
+}
+h3
+{
+	position:relative;
+	top:40px;
+}
+.purplediv
+{
+	position:absolute;
+	background-color:#603CBA;
+	width:183px ;
+	height:183px;
+	top:81px;
+	left:114px;
+	color:white;
+	text-align:center;
+}
+.orangediv
+{
+	position:absolute;
+	background-color:#DA532C;
+	width:183px ;
+	height:183px;
+	top:81px;
+	left:687px;
+	color:white;
+	text-align:center;
+}
+.marrondiv
+{
+	position:absolute;
+	background-color:#9F00A7;
+	width:183px ;
+	height:183px;
+	top:467px;
+	left:687px;
+	color:white;
+	text-align:center;
+}
+.reddiv
+{
+	position:absolute;
+	background-color:#B91D47;
+	width:259px ;
+	height:183px;
+	top:252px;
+	left:389px;
+	color:white;
+	text-align:center;
+		border-radius:50%;
+}
+
+.portalbox
+{
+background-color:transparent;
+position:relative;
+width:893px;
+height:690px;
+top:150px;
+left:150px;
+
+}

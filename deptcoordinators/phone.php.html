@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head><title>Dr.AIT Placement Cell</title>
+<link rel="stylesheet" type="text/css" href="commonstyle1.css" />
+<link rel="stylesheet" type="text/css" href="menustyle1.css" />
+<link rel="stylesheet" type="text/css" href="homestyle1.css" />
+<link rel="stylesheet" type="text/css" href="portal.css" />
+<script type="text/javascript" src="showtime1.js"></script>
+<script type="text/javascript" src="password.js"></script>
+<link rel="stylesheet" type="text/css" href="account.css" />
+
+</head>
+
+<body>
+	<div class="common">
+	<img src="pic.jpg" alt="Cannot display image" class="icon"/>
+		<p class="collegename">
+			Dr. Ambedkar Institute of Technology, Bangalore
+		</p>
+
+		<p class="department">
+			Department of Training and Placement
+		</p>
+
+		<img src="icon.jpg" alt="Cannot display image" class="collegeicon"/>
+	</div>
+
+		
+	<div class="hello">
+	<a href="deptcoord.html" class="logout">Home</a> 
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<script> timefn()</script>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="../login/logout.php" class="logout">logout</a>
+	</div>
+	
+	
+	<!-- This is a div for security question
+	
+	-->
+<div class="accountdiv">
+<form method="post" action="phone.php"  >
+	<h1>Change Phone Number</h1>
+	<hr/><br/>
+	<table class="accounttab" >
+		<tr><td><label>Phone Number</label></td>
+		<td><input type="text" name="phone" maxlength=11/></td></tr>
+		<tr><td><input type="submit" value="Change Number" name="phonesubmit"/></td>
+			<td><input type="button" value="Cancel" name="phonecancel"/></td></tr>
+	</table><br/><br/>
+	<hr/>
+
+	<p id="ptxt" class="errorp" > </p>
+	</form>
+	
+
+
+
+
+
+
+
+<?php 
+require ('../core1.inc.php'); 
+require ('../connect1.inc.php');
+
+if(isset($_POST['phone']) && 
+isset($_POST['phonesubmit']) )
+{
+	
+	$id=$_SESSION['user_id'];
+	$phone=$_POST['phone'];
+	
+	$query="update `origpwd` set `phone`='$phone' WHERE `id`='$id'";
+	
+	if($query_run=mysql_query($query))
+	{	
+		echo "PHONE NUMBER UPDATED SUCCESSFULLY!";
+	}
+	else
+	{
+		echo "could not update!";
+	}
+} 
+?>  
+
+	</div>
+
+ 
+  
+</p>
+</div>
+</body>
+</html>

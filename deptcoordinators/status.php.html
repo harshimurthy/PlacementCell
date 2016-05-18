@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head><title>Dr.AIT Placement Cell</title>
+<link rel="stylesheet" type="text/css" href="commonstyle1.css" />
+<link rel="stylesheet" type="text/css" href="menustyle1.css" />
+<link rel="stylesheet" type="text/css" href="homestyle1.css" />
+<link rel="stylesheet" type="text/css" href="portal.css" />
+
+<link rel="stylesheet" type="text/css" href="dept.css" />
+<script type="text/javascript" src="showtime1.js"></script>
+<script type="text/javascript" src="password.js"></script>
+
+
+</head>
+
+<body>
+	<div class="common">
+	<img src="pic.jpg" alt="Cannot display image" class="icon"/>
+		<p class="collegename">
+			Dr. Ambedkar Institute of Technology, Bangalore
+		</p>
+
+		<p class="department">
+			Department of Training and Placement
+		</p>
+
+		<img src="icon.jpg" alt="Cannot display image" class="collegeicon"/>
+	</div>
+
+		
+	<div class="hello">
+	<a href="deptcoord.html" class="logout">Home</a> 
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<script> timefn()</script>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="../login/logout.php" class="logout">logout</a>
+	</div>
+	
+	<?php
+	require ('../core1.inc.php'); 
+	require ('../connect1.inc.php');
+	$id=$_SESSION['user_id'];
+	$branch_query=mysql_query("select branch from origpwd where id='$id'");
+	$branch1=mysql_result($branch_query,0,'branch');
+	$branch=substr($branch1,0,count($branch1)-6);
+	
+	$query="SELECT * FROM `searcht` WHERE `branch`='$branch' ";
+	if($query_run=mysql_query($query))
+		{	
+			$query_num_rows=mysql_num_rows($query_run); 
+			echo "<div class='msg'>". "Found ";
+			echo $query_num_rows ;
+			echo " Records</div> ";
+			if($query_num_rows!=0)
+			{
+				echo "<div class='ResultDiv'>";
+				echo "<table class='viewtable'>";
+				echo "<tr><th>Sl. No</th><th>NAME</th><th>USN</th><th>COURSE</th><th>COMPANY PLACED IN</th></tr>";
+				for($i=0;$i<$query_num_rows;$i++)
+				{
+					$sl=$i+1;
+					echo "<tr><td>$sl</td>";	
+					$name=mysql_result($query_run,$i,'name');
+					$usn=mysql_result($query_run,$i,'usn');
+					$branch=mysql_result($query_run,$i,'branch');
+					$company1=mysql_result($query_run,$i,'company1');
+					$company2=mysql_result($query_run,$i,'company2');
+					$company3=mysql_result($query_run,$i,'company3');
+					echo "<td>$name</td>";
+					echo "<td>$usn</td>";
+					echo "<td>$branch</td>";
+					echo "<td>$company1 </br> $company2 </br/> $company3</td></tr>";
+				}
+				echo "</table></div>";
+			} 
+		}
+		?>
