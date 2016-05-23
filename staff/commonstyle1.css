@@ -1,0 +1,115 @@
+body
+{
+	background-image:url('adminbg.jpg');
+	background-size:auto;
+	
+	
+}
+
+.common
+{
+	left:130px;
+	position:absolute;
+	height:104px;
+	width:1022px;
+}
+
+.department
+{
+	color:white;
+	position:relative;
+	font-size:25px;
+	text-align:center;
+	font-style:italic;
+	font-weight:bold;
+	margin-top:0px;
+	left:0px;
+	top:-88px;
+}
+
+.collegename
+{
+	color:#2BBDCB;
+	font-size:40px;
+	margin-top:0px;
+	margin-bottom:1px;
+	left:99px;
+	top:-92px;
+	position:relative;
+}
+.icon
+{
+	position:relative;
+	top:12px;
+	left:0px;
+	height:95px;
+	width:81px;
+}
+.collegeicon
+{
+	position:relative;
+	top:-175px;
+	left:961px;
+	height:95px;
+	width:81px;
+}
+
+.hello
+{
+	position:absolute;
+	top:150px;
+	left:273px;
+	height:18px;
+	width:640px;
+	border-top-color:#69F0AE;
+	border-bottom-color:#69F0AE;
+	border-style:dotted;
+	border-width:1px;
+	color:white;
+	font-weight:bold;
+}
+
+
+.logout
+{
+color:#2bcb39;
+text-transform:uppercase;
+position:relative;
+
+
+}
+
+
+
+
+
+.footertext
+{
+	text-align:center;
+	margin-top:1px;
+}
+
+.footer
+{ 	top:850px;
+	position:fixed;
+	left:300px;
+	padding-top:5px;
+	width:676px;
+	height:20px;
+	border-top-width:1px;
+	border-top-color:#2BBDCB;
+	border-top-style:solid;
+}
+
+a.footerdesign{
+   
+
+       color:#2bcb39;
+
+
+}
+
+a.footerdesign:hover, a.footerdesign:active {
+    background-color: white;
+	color:#2bcb39;
+}

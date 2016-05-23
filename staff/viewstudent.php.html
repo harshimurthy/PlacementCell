@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head><title>Dr.AIT Placement Cell</title>
+<link rel="stylesheet" type="text/css" href="commonstyle1.css" />
+<link rel="stylesheet" type="text/css" href="menustyle1.css" />
+<link rel="stylesheet" type="text/css" href="homestyle1.css" />
+<script type="text/javascript" src="showtime1.js"></script>
+<link rel="stylesheet" type="text/css" href="notice.css" />
+</head>
+
+<body>
+
+	<div class="common">
+	<img src="pic.jpg" alt="Cannot display image" class="icon"/>
+		<p class="collegename">
+			Dr. Ambedkar Institute of Technology, Bangalore
+		</p>
+
+		<p class="department">
+			Department of Training and Placement
+		</p>
+
+		<img src="icon.jpg" alt="Cannot display image" class="collegeicon"/>
+	</div>
+
+		
+	<div class="hello">
+	<a href="staff.html" class="logout">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<script> timefn()</script>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="../login/logout.php" class="logout">logout</a>
+	
+	</div>
+	
+	<div class="box">
+	<?php
+require ('../core1.inc.php'); 
+require ('../connect1.inc.php');
+
+
+
+ 	$q=mysql_query("select * from placedstudent ");
+	if($q)
+	{
+		$i=1;
+		if(mysql_num_rows($q)==0)
+		{
+			echo "no results found";
+		}
+		else
+		{
+		echo "<table class='tab'> <tr><th>Sl no</th><th>Name</th><th>Branch</th><th>Company</th></tr>";
+		while($row=mysql_fetch_array($q))
+		{
+			
+			echo "<tr><td>".$i."</td><td>".$row['name']."</td><td>".$row['branch']."</td><td>".$row['company1']."</td></tr>";
+			$i++;
+		}
+		echo "</table>";
+		}
+		}
+	
+	else
+		echo "could not fetch results";
+
+?>
+
+</div>
+
+	
+	
+
+
+<div class="footer">
+<p class="footertext">
+<a href="staff.html" class="footerdesign" >Home</a> |
+<a href="http://www.dr-ait.org" class="footerdesign">www.dr-ait.org</a> |
+<a href="http://login/credits.html" class="footerdesign">Credits</a>|
+<a href="http://login/contact.html" class="footerdesign">Contact</a> |
+<a href="../login/logout.php" class="footerdesign">Logout</a> 
+  
+</p>
+</div>
+		
+</body>
+</html>
