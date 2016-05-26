@@ -1,0 +1,30 @@
+.downbox
+{
+position:relative;
+
+top:230px;
+left:324px;
+height:500px;
+width:569px;
+
+
+
+}
+.downtable tr
+{
+	line-height:30px;
+}
+.downtable tr:nth-child(odd)
+{
+	background:#ffd2e8;
+}
+.downtable tr:nth-child(even)
+{
+	background:#e8ffd2;
+}
+
+.downtable
+{
+	width:100%;
+	text-align:center;
+}

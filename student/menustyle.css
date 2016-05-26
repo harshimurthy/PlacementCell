@@ -1,0 +1,80 @@
+
+.menubar
+{	position:absolute;
+	top:126px;
+	left:86px;
+	z-index:10;
+}
+nav ul ul 
+{
+	display: none;
+}
+
+nav ul li:hover > ul 
+{
+		display: block;
+}
+nav ul li:active > ul 
+{
+		display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover a{
+    background-color: white;
+	color:#2BBDCB
+}
+nav ul li:active a{
+    background-color: white;
+	color:#2BBDCB
+}
+
+
+nav ul li a {
+     width: 120px;
+	height:40px;
+     display: block;
+    color: white;
+    background-color: #2BBDCB;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul ul {
+	background: white;
+		position: absolute; top: 100%;
+}
+
+nav ul ul li {
+		float: none; 
+		position: relative;
+}
+		
+nav ul ul li a
+{   			    width: 120px;
+	
+     display: block;
+    color: white;
+	    text-transform:none;
+			
+}
+			
+nav ul ul li:hover a
+{		color:white;
+		background: #2BBDCB;
+}
+
+
+

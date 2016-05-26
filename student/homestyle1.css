@@ -1,0 +1,53 @@
+.message {
+	position:relative;
+	border-radius: 99px 0px 99px 0px;
+   	 -moz-border-radius: 99px 0px 99px 0px;
+    	-webkit-border-radius: 99px 0px 99px 0px;
+    	border: 2px solid #2bcb89;
+    	padding-left:10px;
+   	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:30px;
+    	font-size:18px;
+	font-weight:bold;
+	text-align:justify;
+	background-color: transparent;
+    	color:#00ACC1;
+	font-style:italic;
+	top:295px;left:310px;width:443px;height: 150px;
+}
+
+h2
+{
+color:#2bcb89;
+position:relative;
+top:-15px;
+left:20px;
+padding-bottom:-20px;
+}
+
+.flashnews
+{
+position:Relative;
+top:27px;
+left:711px;
+height:281px;
+width:190px;
+border:6px solid #00ACC1;
+
+}
+.icon
+{
+	position:relative;
+	top:12px;
+	left:0px;
+	height:95px;
+	width:81px;
+}
+.calender
+{
+position:Relative;
+top:380px;
+left:310px;
+}
+
