@@ -1,0 +1,58 @@
+
+.feedback
+{
+	position:absolute;
+	border:1px solid #FFBBFF;
+	background-color:#FFBBFF;
+	top:270px;
+	left:230px;
+	width:824px;
+	text-align:center;
+	color:#b4155d;
+	border-radius:150px;
+}
+
+
+.feedbox1
+{
+	font-weight:bolder;
+position:relative;
+top:10px;
+left:40px;
+color:#b4155d;
+border:1px solid #FFBBFF;
+
+background-color:white;
+border-spacing:0px 16px;
+
+}
+
+.feedback h4
+{
+font-weight:lighter;}
+
+.PreparationTab
+{
+position:relative;
+left:30px;
+}
+
+input
+{
+	size:50px;
+	
+}
+
+.cvtable tr:nth-child(odd)
+{
+	background:#E1BEE7;
+}
+.cvtable tr:nth-child(even)
+{
+	background:#FFCCBC;
+}
+
+
+td{font-color:#69F0AE;}
+font{
+ color:#69F0AE;}
